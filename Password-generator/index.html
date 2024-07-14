@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseña</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>GENERADOR CONTRASEÑA</h1>
+    <label for="largoContraseña">Número de caracteres</label>
+    <input type="number" id="largoContraseña" min="3"> <br>
+    <label for="minus">Letras minúsculas</label>
+    <input type="checkbox" id="minus"><br>
+    <label for="mayus">Letras mayúsculas</label>
+    <input type="checkbox" id="mayus"><br>
+    <label for="nums">Números</label>
+    <input type="checkbox" id="nums"><br>
+    <label for="simb">Símbolos</label>
+    <input type="checkbox" id="simb"><br> <br>
+    <button onclick="generarYMostrarContraseña()">GENERAR</button><br><br>
+    <label for="resultado">CONTRASEÑA GENERADA: </label>
+    <p id="resultado"></p>
+    <script src="index.js"></script>
+</body>
+</html>

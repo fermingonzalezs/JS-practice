@@ -1,0 +1,35 @@
+#container{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}                   
+
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(123, 49, 250);
+    color: white;
+}
+
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+}
+
+#resultado{
+    margin: 30px;
+}
+
+#imagenes img{
+    width: 250px;
+    margin: 10px;
+}

@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-image: url(./fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#reloj-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#reloj{
+    font-family: monospace;
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(2px);
+}
+
+#ubicacion{
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(2px);
+}

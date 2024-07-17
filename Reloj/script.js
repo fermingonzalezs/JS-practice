@@ -4,16 +4,12 @@ function actualizarHora(){
     const minutos = now.getMinutes().toString().padStart(2,0);
     const segundos = now.getSeconds().toString().padStart(2,0);
     const milisegundos = now.getMilliseconds();
-    const dia = now.getDay();
-
-    const stringReloj = `${hora}:${minutos}:${segundos}:${milisegundos}`;
+    const ampm = hora >= 12 ? 'PM' : 'AM';
+    const stringReloj = `${hora}:${minutos}:${segundos}:${milisegundos} ${ampm}`;
 
     document.getElementById("reloj").textContent = stringReloj;
 }
 
-actualizarHora();
-
-setInterval(actualizarHora,1);
 
 
 if(navigator.geolocation){
@@ -34,3 +30,7 @@ if(navigator.geolocation){
 
 
 
+
+actualizarHora();
+
+setInterval(actualizarHora,1);
